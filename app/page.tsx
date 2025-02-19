@@ -168,7 +168,7 @@ export default function Home() {
               {wrappedAlbums.map((album, index) => (
                 <motion.img
                   key={index}
-                  src={`/albums/${album}`}
+                  src={`/Albums/${album}`}
                   alt=""
                   className="w-64 h-64 object-cover rounded-lg shadow-xl"
                   initial={{ opacity: 0.5 }}
@@ -244,7 +244,7 @@ export default function Home() {
                 >
                   <div className="aspect-video overflow-hidden rounded-2xl shadow-lg relative">
                     <img
-                      src={`/interviews/${interview}`}
+                      src={`/Interviews/${interview}`}
                       alt={`Interview with ${interview.split(".")[0]}`}
                       className="w-full h-full object-cover"
                     />
@@ -291,7 +291,7 @@ export default function Home() {
                 >
                   <div className="aspect-video overflow-hidden rounded-2xl shadow-lg relative">
                     <img
-                      src={`/interviews/${interview}`}
+                      src={`/Interviews/${interview}`}
                       alt={`Interview with ${interview.split(".")[0]}`}
                       className="w-full h-full object-cover"
                     />
