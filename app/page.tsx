@@ -90,7 +90,7 @@ export default function Home() {
             of Your Music
           </motion.h1>
           <motion.p
-            className="text-gray-200 px-20 font-bold text-lg md:text-xl mb-8 leading-relaxed"
+            className="text-gray-200 px-4 md:px-20 font-bold text-lg md:text-xl mb-8 leading-relaxed"
             variants={fadeInUp}
           >
             Take control of your media, always ad-free. Hear next-level sound
@@ -120,7 +120,7 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <motion.div
-          className="rounded-3xl p-32 md:p-48 lg:p-60 max-w-[80%] w-full mx-auto text-center my-48 relative overflow-hidden"
+          className="rounded-3xl p-8 md:p-32 lg:p-48 max-w-[80%] w-full mx-auto text-center my-12 md:my-48 relative overflow-hidden"
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
@@ -152,10 +152,10 @@ export default function Home() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <div className="rounded-3xl p-32 md:p-48 lg:p-60 max-w-[80%] w-full mx-auto text-center my-48 relative overflow-hidden">
+        <div className="rounded-3xl p-8 md:p-32 lg:p-48 max-w-[80%] w-full mx-auto text-center my-12 md:my-48 relative overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
             <motion.div
-              className="grid grid-cols-6 gap-4"
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-4"
               animate={{
                 y: ["0%", "-50%"],
               }}
@@ -210,7 +210,7 @@ export default function Home() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <div className="rounded-3xl p-52 md:p-52 lg:p-72 max-w-[130%] w-full mx-auto text-center my-48 relative">
+        <div className="rounded-3xl p-8 md:p-52 lg:p-72 max-w-[95%] md:max-w-[130%] w-full mx-auto text-center my-12 md:my-48 relative">
           <h2 className="font-bold text-gray-400 text-xl md:text-2xl mb-8 tracking-wider">
             Exclusive Content
           </h2>
@@ -235,7 +235,7 @@ export default function Home() {
               {useWrapArray(interviews1).map((interview, index) => (
                 <motion.div
                   key={index}
-                  className="flex-none w-[500px]"
+                  className="flex-none w-[280px] sm:w-[400px] md:w-[500px]"
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -282,7 +282,7 @@ export default function Home() {
               {useWrapArray(interviews2).map((interview, index) => (
                 <motion.div
                   key={index}
-                  className="flex-none w-[500px]"
+                  className="flex-none w-[280px] sm:w-[400px] md:w-[500px]"
                   initial={{ opacity: 0.5 }}
                   animate={{ opacity: 1 }}
                   transition={{
@@ -334,7 +334,7 @@ export default function Home() {
           </h3>
 
           <motion.div
-            className="bg-gray-50 rounded-xl p-8 text-left overflow-hidden max-w-2xl mx-auto relative shadow-xl"
+            className="bg-gray-50 rounded-xl p-4 md:p-8 text-left overflow-hidden max-w-[95%] md:max-w-2xl mx-auto relative shadow-xl"
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -345,7 +345,7 @@ export default function Home() {
               <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
               <div className="w-3 h-3 rounded-full bg-green-400"></div>
             </div>
-            <pre className="text-gray-600 font-mono text-sm md:text-base overflow-x-auto">
+            <pre className="text-gray-600 font-mono text-xs md:text-sm lg:text-base overflow-x-auto">
               <code>{`services:
             music-server:
               image: ghcr.io/willkirkmanm/music
